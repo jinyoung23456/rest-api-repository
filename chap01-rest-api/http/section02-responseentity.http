@@ -1,0 +1,29 @@
+### 전체 회원 조회
+GET http://localhost:8080/entity/users
+
+### 특정 회원 조회
+GET http://localhost:8080/entity/users/3
+
+### 신규 회원 등록
+POST http://localhost:8080/entity/users
+Content-Type: application/json
+
+{
+  "no" : "1",
+  "id" : "user01",
+  "pwd" : "pass01",
+  "name" : "짜장"
+}
+
+### 기존 회원 수정
+PUT http://localhost:8080/entity/users/1
+Content-Type: application/json
+
+{
+  "id" : "user0101",
+  "pwd" : "pass0101",
+  "name" : "코끼리"
+}
+
+### 회원 삭제
+DELETE http://localhost:8080/entity/users/5
